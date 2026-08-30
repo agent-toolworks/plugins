@@ -1,17 +1,33 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "agent-toolworks",
-  "description": "Tools for working with coding agents — measured, not asserted. Each one is built on a benchmark it can lose.",
+  "description": "Tools for working with coding agents \u2014 measured, not asserted. Each one is built on a benchmark it can lose.",
   "owner": {
     "name": "Zvi Rahamim",
     "url": "https://github.com/agent-toolworks"
   },
   "plugins": [
     {
+      "name": "fleet-workspace",
+      "description": "Work on a ticket that spans several repositories: clone a fleet of repos once, then create a per-ticket workspace of git worktrees holding only the repos that ticket changes.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Zvi Rahamim"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "github",
+        "repo": "agent-toolworks/repo-fleet"
+      },
+      "homepage": "https://github.com/agent-toolworks/repo-fleet"
+    },
+    {
       "name": "code-search",
-      "description": "Search across many repositories at once — who calls an endpoint, where a symbol is defined, what implements an interface, which repo publishes a package, and when a cross-repo seam last changed. Routes each question to whichever of five engines can answer it, and labels every answer with the kind of evidence behind it.",
+      "description": "Search across many repositories at once \u2014 who calls an endpoint, where a symbol is defined, what implements an interface, which repo publishes a package, and when a cross-repo seam last changed. Routes each question to whichever of five engines can answer it, and labels every answer with the kind of evidence behind it.",
       "version": "1.13.0",
-      "author": { "name": "Zvi Rahamim" },
+      "author": {
+        "name": "Zvi Rahamim"
+      },
       "category": "productivity",
       "source": {
         "source": "github",
@@ -21,9 +37,11 @@
     },
     {
       "name": "token-save",
-      "description": "Measure what an AI coding session actually costs and get advice derived from your own transcripts — where the tokens went, which were re-read on every turn, and which fixes are worth making on this machine.",
+      "description": "Measure what an AI coding session actually costs and get advice derived from your own transcripts \u2014 where the tokens went, which were re-read on every turn, and which fixes are worth making on this machine.",
       "version": "0.1.0",
-      "author": { "name": "Zvi Rahamim" },
+      "author": {
+        "name": "Zvi Rahamim"
+      },
       "category": "productivity",
       "source": {
         "source": "github",
