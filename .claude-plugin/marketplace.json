@@ -8,6 +8,32 @@
   },
   "plugins": [
     {
+      "name": "note-search",
+      "description": "Search notes from every project at once (Claude Code memory folders, a knowledge base, a notes vault) for what was already learned, in one call, for a few hundred tokens. Read-only unless a group allows adding notes; no AI model, no network.",
+      "author": {
+        "name": "Zvi Rahamim"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-toolworks/note-search.git"
+      },
+      "homepage": "https://github.com/agent-toolworks/note-search"
+    },
+    {
+      "name": "toolworks-hub",
+      "description": "A local web page for Claude Code and the agent-toolworks tools: sessions, and a tab for each tool installed. Runs on 127.0.0.1 only, needs nothing but python3. Open it with /hub.",
+      "author": {
+        "name": "Zvi Rahamim"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-toolworks/toolworks-hub.git"
+      },
+      "homepage": "https://github.com/agent-toolworks/toolworks-hub"
+    },
+    {
       "name": "fleet-workspace",
       "description": "Work on a ticket that spans several repositories: clone a fleet of repos once, then create a per-ticket workspace of git worktrees holding only the repos that ticket changes.",
       "author": {
